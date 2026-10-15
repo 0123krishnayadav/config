@@ -1,0 +1,16 @@
+Include ~/.colima/ssh_config
+
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+
+Host tradebot
+  HostName 92.4.81.196
+  User ubuntu
+  IdentityFile ~/.ssh/id_rsa
+  ServerAliveInterval 30
+  ExitOnForwardFailure yes
+  # LocalForward 5000 127.0.0.1:5000
+

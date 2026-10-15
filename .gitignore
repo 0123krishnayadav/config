@@ -1,0 +1,17 @@
+# Never commit secrets or machine-specific files
+*.local
+.zshrc.local
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+*.rayconfig
+.DS_Store
+
+# Files zsh / Apple Terminal write into $ZDOTDIR (= zsh/)
+zsh/.zsh_sessions/
+zsh/.zsh_history
+zsh/.zcompdump*
