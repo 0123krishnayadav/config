@@ -137,6 +137,10 @@ iterm2() {
   link "$REPO/iterm/iterm_config.json" "$HOME/Library/Application Support/iTerm2/DynamicProfiles/krishna-personal.json"
   defaults write com.googlecode.iterm2 "Default Bookmark Guid" -string "$guid"
   ok "profile 'Krishna Personal' installed and set as default (restart iTerm2)"
+  # Don't dim the inactive split pane / background windows
+  defaults write com.googlecode.iterm2 DimInactiveSplitPanes -bool false
+  defaults write com.googlecode.iterm2 DimBackgroundWindows -bool false
+  ok "pane dimming disabled"
 }
 
 vscode() {
